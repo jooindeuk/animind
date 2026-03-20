@@ -10,7 +10,7 @@ ${genreText}
 형식: {"title":"제목(15자이내)","genres":["장르1","장르2","장르3"],"summary":"핵심 매력 2-3문장","improved_plot":"개선된 줄거리 3-5문장","scenes":[{"num":1,"desc":"씬1"},{"num":2,"desc":"씬2"},{"num":3,"desc":"씬3"},{"num":4,"desc":"씬4"}],"character_tip":"캐릭터 조언 2문장","direction_style":"연출 스타일 2문장"}`;
  
     const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
